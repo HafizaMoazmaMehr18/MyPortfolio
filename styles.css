@@ -1,0 +1,190 @@
+/* Add general styling for body */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Dark gray text color */
+    background-color: #ecf0f1; /* Light gray background color */
+}
+
+/* Add styling for section titles */
+.section-title {
+    color: #001f3f; /* Navy blue section title color */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+/* Hover effect for section titles */
+.section-title:hover {
+    color: #ff851b; /* Orange color on hover */
+}
+
+/* Add underline effect on section titles */
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #001f3f;
+    bottom: 0;
+    left: 25%;
+    transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+    width: 80%;
+}
+
+/* Add styling for lead text */
+.lead {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #333; /* Dark gray text color */
+}
+
+/* Add styling for timeline */
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Animate timeline-item on hover */
+.timeline-item:hover {
+    transform: scale(1.05);
+    animation: animate__animated animate__pulse; /* Add pulse animation on hover */
+}
+
+.timeline-item h3 {
+    font-size: 1.8rem;
+    color: #001f3f;
+}
+
+.timeline-date {
+    color: #555;
+}
+
+/* Add styling for list group items */
+.list-group-item {
+    background-color: rgba(0, 31, 63, 0.1); /* Navy blue with low transparency */
+    border: none;
+    color: #333; /* Dark gray text color */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: rgba(0, 31, 63, 0.3); /* Slightly increased transparency on hover */
+}
+
+/* Add styling for links */
+a {
+    color: #001f3f; /* Navy blue link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ff851b; /* Orange color on hover */
+}
+
+/* Add custom styling for the footer */
+footer {
+    background-color: rgba(0, 31, 63, 0.1); /* Navy blue with low transparency */
+    padding: 30px 0;
+    color: #333; /* Dark gray text color */
+    text-align: center;
+}
+
+
+/* Add styling for the navbar */
+.navbar {
+    background: linear-gradient(to right, rgba(0, 31, 63, 0.7), rgba(0, 31, 63, 0.9)); /* Gradient background with transparency */
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #fff; /* White navbar text color */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White color for navbar toggler icon */
+}
+
+/* Add styling for the main container */
+.container {
+    margin: 0 auto;
+}
+
+/* Additional styling for sections */
+.section {
+    padding: 80px 0;
+    background-color: rgba(0, 31, 63, 0.03); /* Navy blue with very low transparency */
+    transition: background-color 0.3s ease-in-out; /* Add smooth transition for background color change */
+}
+
+/* Animate section on hover */
+.section:hover {
+    background-color: rgba(0, 31, 63, 0.1); /* Slightly increased transparency on hover */
+    animation: animate__animated animate__fadeInUp; /* Add fadeInUp animation on hover */
+}
+
+.bg-light {
+    background-color: #fff; /* White background color */
+}
+
+/* Add fadeIn animation for introduction section */
+#introduction {
+    animation: animate__animated animate__slideInLeft;
+}
+
+/* Add slideInRight animation for other sections */
+#education,
+#skills,
+#experience,
+#certifications,
+#extracurricular,
+#contact {
+    animation: animate__animated animate__slideInRight;
+}
+
+/* Gradient overlay effect on images */
+.img-overlay {
+    position: relative;
+    display: inline-block;
+}
+
+.img-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 31, 63, 0.8), rgba(0, 31, 63, 0.8)); /* Gradient overlay */
+    pointer-events: none;
+}
+
+/* Custom styling for the illustration */
+#introduction .img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the illustration */
+#introduction .img-fluid:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
